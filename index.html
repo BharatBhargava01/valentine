@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💕 A Special Question For You 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Initial Screen -->
+      <div class="screen active" id="screen1">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="letter">
+              <span class="heart-icon">💌</span>
+              <p class="letter-text">Click to open your special message...</p>
+            </div>
+          </div>
+        </div>
+        <p class="hint-text">Tap the envelope</p>
+      </div>
+
+      <!-- Question Screen -->
+      <div class="screen" id="screen2">
+        <div class="content-card">
+          <div class="sparkle-container">
+            <span class="sparkle">✨</span>
+            <span class="sparkle">✨</span>
+            <span class="sparkle">✨</span>
+          </div>
+
+          <h1 class="title">Hey Beautiful</h1>
+
+          <div class="heart-divider">
+            <span>💕</span>
+            <div class="line"></div>
+            <span class="big-heart">❤️</span>
+            <div class="line"></div>
+            <span>💕</span>
+          </div>
+
+          <p class="message">
+            Every moment with you feels like magic. <br />
+            Your smile lights up my world. <br />
+            You make my heart skip a beat every single day.
+          </p>
+
+          <h2 class="question">Will You Be My Valentine?</h2>
+
+          <div class="rose-decoration">🌹</div>
+
+          <div class="buttons-container">
+            <button class="btn btn-yes" id="yesBtn">
+              <span class="btn-text">Yes! 💖</span>
+              <span class="btn-glow"></span>
+            </button>
+            <button class="btn btn-no" id="noBtn">
+              <span class="btn-text">Let me think...</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Celebration Screen -->
+      <div class="screen" id="screen3">
+        <div class="celebration-card">
+          <div class="confetti-container" id="confettiContainer"></div>
+
+          <div class="celebration-content">
+            <div class="beating-heart">💖</div>
+            <h1 class="celebration-title">Yay! 🎉</h1>
+            <p class="celebration-message">
+              You just made me the happiest person alive! <br />
+              Can't wait to celebrate Valentine's Day with you!
+            </p>
+            <div class="love-icons">
+              <span>🌹</span>
+              <span>💝</span>
+              <span>🍫</span>
+              <span>💐</span>
+              <span>❤️</span>
+            </div>
+            <p class="forever-text">Forever Yours 💕</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
